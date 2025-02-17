@@ -1,0 +1,143 @@
+
+.checkered-background {
+    background-image:
+      repeating-linear-gradient(0deg, #550074, #eee 50%, #550074 50%, #ddd 100%), /* Horizontal lines */
+      repeating-linear-gradient(90deg, #eee, #550074 50%, #ddd 50%, #550074 100%); /* Vertical lines */
+  }
+/* style.css */
+body {
+    font-family: 'Poppins', sans-serif; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #4b0067; 
+}
+
+header {
+    background-color: #f8f8f8e1; 
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin-left: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 0;
+    background-image: url('sky.png'); 
+    background-size: cover;
+    background-position: center;
+    color: rgb(133, 0, 108); /* White text on hero image */
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.hero button {
+    background-color: #95A8EA; /* Coral button color */
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.featured-products {
+    padding: 40px;
+    text-align: center;
+}
+
+.featured-products h2 {
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+}
+
+.product {
+    border: 1px solid #ddd; /* Light gray border for products */
+    padding: 20px;
+    text-align: center;
+}
+
+.product img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.product h3 {
+    margin-bottom: 10px;
+}
+
+.product p {
+    margin-bottom: 15px;
+}
+
+.product button {
+    background-color: #C0AAD8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Responsive adjustments (example) */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation on smaller screens */
+        text-align: center;
+    }
+
+    nav li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2em;
+    }
+}
